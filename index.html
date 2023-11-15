@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:description" content="Demo login form">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/125746506?v=4">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('img/im2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            
+
+        }
+
+        .main{
+            background-color: rgba(236, 241, 247, 0.434);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+
+        h1{
+            text-align: center;
+            text-decoration: solid;
+            font-size: 35px;
+        }
+
+        label{
+            font-size: 25px;
+            color: black;
+            padding: 5px;
+        }
+
+
+        input{
+            padding: 4px;
+            margin: 5px;
+            height: 20px;
+            width: 200px;
+        }
+
+        input[type='submit']{
+            width: 100px;
+            height: 30px;
+            border: none;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.922);
+            color: white;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Login</h1>
+        <form action="#" id="sub">
+            <label for="email">Enter your Email</label>
+            <input type="text" placeholder=" Email" id="id" name="id">
+
+            <label for="pass">Enter your password</label>
+            <input type="password" name="pass" id="pass">
+
+            <input type="submit" name="btn" id="btn">
+        </form>
+    </div>
+<script>
+    const submit = document.getElementById('sub')
+    submit.addEventListener('submit',function(){
+        alert('Are abal eta ekta demo login form tore ke bolse login korte . faka jai dekle vorte issa kore abal .')
+    })
+</script>
+</body>
+</html>
